@@ -2,28 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #BEDABE;
+  background: #202420;
+  font-family: monospace;
+}
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: #90D590;
 }
 
 @layer utilities {
@@ -31,3 +19,74 @@ body {
     text-wrap: balance;
   }
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #CFECCF;
+}
+
+h1 {
+  font-size: 2rem; /* 32px if the base font size is 16px */
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 0rem;
+  color: #CFECCF;
+}
+
+h2 {
+  font-size: 1.75rem; /* 28px */
+  font-weight: bold;
+  padding: .75rem 0rem;
+  /* color: #b4ec9a; */
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+  padding: .6rem 0rem;
+}
+
+h4 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: bold;
+  padding: .35rem 0rem;
+}
+
+h5 {
+  font-size: 1.125rem; /* 18px */
+  font-weight: bold;
+  padding: .25rem 0rem;
+}
+
+h6 {
+  font-size: 1rem; /* 16px, same as the default body text */
+  font-weight: bold;
+  padding: .15rem 0rem;
+}
+
+p {
+  font-size: .9rem; /* 16px */
+  line-height: 1.6; /* Adjust for readability */
+}
+
+ul {
+  @apply list-disc pl-6;
+  font-size: .9rem; /* 16px */
+}
+
+ol {
+  @apply list-decimal pl-9;
+  font-size: .9rem; /* 16px */
+}
+
+code {
+  @apply bg-[#181D18] text-[.9rem] text-[#90D590] px-2 py-1 rounded whitespace-pre-wrap;
+}
+/* 
+li {
+  @apply ml-2;
+  
+  &::before {
+    content: '-';
+    @apply mr-2;
+  }
+} */
