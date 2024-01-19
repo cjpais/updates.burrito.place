@@ -4,7 +4,7 @@ import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 const getMarkdown = () => {
-  return fs.readFileSync("public/updates/wk1-unwrapped.md").toString("utf-8");
+  return fs.readFileSync("./posts/wk1-unwrapped.md").toString("utf-8");
 };
 
 const Page = () => {
