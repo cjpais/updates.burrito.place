@@ -6,7 +6,7 @@ The project and it's specific idea keeps shifting and changing through time as I
 
 ## The `burrito`
 
-At the core of it all is building a little playground. Let's call this playground a `burrito`. Everyone has their own `burrito`.
+At the core of it all is building a little playground. Let's call this playground a `burrito`. Anyone can have their own `burrito`.
 
 Your `burrito` contains any kind of data you may have or produce. This data might be voice notes, email, calendar, spotify listening history, messages, etc.
 
