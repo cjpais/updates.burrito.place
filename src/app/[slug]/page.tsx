@@ -13,7 +13,7 @@ const getPost = (slug: string) => {
 const Page = ({ params }: { params: { slug: string } }) => {
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="max-w-[640px] w-full flex flex-col gap-2">
+      <div className="max-w-[640px] w-full flex flex-col gap-4">
         <Markdown remarkPlugins={[remarkGfm]}>{getPost(params.slug)}</Markdown>
       </div>
     </div>
