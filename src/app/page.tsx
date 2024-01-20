@@ -1,18 +1,13 @@
 import dayjs from "dayjs";
+import fs from "fs";
+import { join } from "path";
 
 export default function Home() {
   const posts = [
     {
-      title: "wk.1",
-      type: "unwrapped",
-      date: 1705680891,
-      summary: "someting",
-    },
-    {
-      title: "wk.1",
-      type: "tech",
-      date: 1705680891,
-      summary: "someting",
+      title: "context v0",
+      date: 1705724515,
+      summary: "wrapping your personal data in a tortilla",
     },
   ];
 
@@ -25,7 +20,6 @@ export default function Home() {
           <Row
             key={i}
             title={post.title}
-            type={post.type}
             date={post.date}
             summary={post.summary}
           />
@@ -46,12 +40,10 @@ export default function Home() {
 
 const Row = ({
   title,
-  type,
   date,
   summary,
 }: {
   title: string;
-  type: string;
   date: number;
   summary: string;
 }) => {
@@ -59,14 +51,14 @@ const Row = ({
     <div className="flex flex-col font-mono gap-1 w-full">
       <div className="flex">
         <p className="w-6">*</p>
-        <a href={`/${title}`} className="underline">
-          {title} {type}
+        <a href={`/${title.replace(" ", "-")}`} className="underline">
+          {title}
         </a>
         {/* <p>[{type}]</p> */}
         <div className="flex-1"></div>
         <p className="">{dayjs.unix(date).format("MM/DD/YY")}</p>
       </div>
-      {/* <p className="text-xs font-mono pl-4 italic">{summary}</p> */}
+      <p className="text-xs font-mono pl-6 italic">{summary}</p>
     </div>
   );
 };

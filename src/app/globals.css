@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem; /* 32px if the base font size is 16px */
+  font-size: 2rem; 
   font-weight: bold;
   text-align: center;
   padding: 1rem 0rem;
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.75rem;
   font-weight: bold;
   padding: .75rem 0rem;
   /* color: #b4ec9a; */
@@ -69,17 +69,19 @@ p {
 }
 
 ul {
-  @apply list-disc pl-6;
+  @apply list-disc pl-6 py-3;
   font-size: .9rem; /* 16px */
+  line-height: 1.8;
 }
 
 ol {
   @apply list-decimal pl-9;
   font-size: .9rem; /* 16px */
+  line-height: 1.8;
 }
 
 code {
-  @apply bg-[#181D18] text-[.9rem] text-[#90D590] px-2 py-1 rounded whitespace-pre-wrap;
+  @apply bg-[#181D18] text-[#90D590] px-2 py-1 rounded whitespace-pre-wrap;
 }
 /* 
 li {
