@@ -83,6 +83,14 @@ ol {
 code {
   @apply bg-[#181D18] text-[#90D590] px-2 py-1 rounded whitespace-pre-wrap;
 }
+
+pre {
+  @apply bg-[#181D18] text-[#90D590] px-2 py-1 rounded whitespace-pre-wrap;
+}
+
+pre > code {
+  @apply bg-[#181D18] text-[#90D590] whitespace-pre-wrap px-0 text-[.75rem];
+}
 /* 
 li {
   @apply ml-2;

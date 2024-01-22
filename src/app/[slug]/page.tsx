@@ -12,9 +12,15 @@ const getPost = (slug: string) => {
 
 const Page = ({ params }: { params: { slug: string } }) => {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center pt-4">
       <div className="max-w-[640px] w-full flex flex-col gap-4">
         <Markdown remarkPlugins={[remarkGfm]}>{getPost(params.slug)}</Markdown>
+        <h2>Curious?</h2>
+        <p>
+          If you're curious about any of this, drop me a line:{" "}
+          <a href="mailto:cj@cjpais.com">cj@cjpais.com</a>
+        </p>
+        <p>I'd love to chat with you!</p>
       </div>
     </div>
   );

@@ -43,9 +43,3 @@ The core idea is that an experimental platform for data can enable all kinds of 
 I want to be able to express a bunch of the experiences or joys I'm having in life, but I don't want to spam you with them either. I also want to be reminded of these myself. I want to ideally use a technology like the `burrito` to find and talk to more interesting people. People who I share commonality with, or those who have a different opinion than me. I wanna hear em out.
 
 I am also very curious how something like the `burrito` serves as a backend for characters like [Tanaki](https://lingonberry.ai/tanaki). Perhaps Tanaki has their own `burrito`. Perhaps Tanaki is one of the ways I interact with my `burrito`.
-
-## Curious?
-
-Is any of this curious to you? Drop me a line: [cj@cjpais.com](mailto:cj@cjpais.com)
-
-I'd love to chat with you!

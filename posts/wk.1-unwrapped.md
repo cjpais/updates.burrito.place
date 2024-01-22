@@ -1,26 +1,8 @@
 # wk.1 unwrapped
 
-## Motivation
-
-The motivation for building initially came through working on [Tanaki](https://lingonberry.ai/tanaki), and a “brain” we were building for Dr. Tanaki Lingonberry. The interface into the brain was dead simple, send audio note to a server. The server processes the audio and we could ask questions to the brain using basic RAG. In building this it became clear that there were always more modules to add or processing to be done. Some of the requests
-
-- summarize in 1 sentence
-- summarize in 2 sentences
-- send a notification after summary generated
-- answer questions involving time
-- who has been mentioned
-
-All of this was doable, but it was clear doing each of these was often just adding another step or column to a database effectively. This was becoming very tedious. Not to mention I'd built many RAG applications already, and I wanted a more unified way of building them.
-
-Plus I wanted a brain for myself and my personal data. I wanted to start asking questions and introspecting into myself, as well as being able to build a website from my raw unstructured data. The motivation being better able to express myself more fully to more people without spamming them with nonsense and things they don't care about. Eventually I would like to put all of my data into this.
-
-For now I am calling this project `burrito`. (or keep it brain)
-
 ## Goal
 
-So looking at all of this the overall goal was to build a flexible data ingestion system. One key premise for building this system was that I don’t know how the data should be retrieved in advance (upon a question being asked, or literally just querying the data). So we want to build a system that let’s us play with the processing of the data so it can be used in a wide variety of ways. To do this we will build a pipeline which takes in data of a `type` and processes it in whatever steps you want.
-
-**Requirements?**
+The overall goal was to build a flexible data ingestion system. One key premise for building this system was that I don’t know how the data should be retrieved in advance (upon a question being asked, or literally just querying the data). So we want to build a system that let’s us play with the processing of the data so it can be used in a wide variety of ways. To do this we will build a pipeline which takes in data of a `type` and processes it in whatever steps you want.
 
 A concrete example is:
 
@@ -35,13 +17,27 @@ This is pretty simple, but maybe I realize I want to add some additional process
 
 So we now want to add those steps to the pipeline and make it easy to do so.
 
+## Backstory
+
+The motivation for building initially came through working on [Tanaki](https://lingonberry.ai/tanaki), and a “brain” we were building for Dr. Tanaki Lingonberry. The idea was to have an easy group input surface to provide lore/backstory for Dr. Tanaki Lingonberry. The interface into the brain was dead simple, send audio note to a server. The server processes the audio and we could ask questions to the brain using basic RAG. In building this it became clear that there were always more modules to add or processing to be done. Some of the requests
+
+- summarize in 1 sentence
+- summarize in 2 sentences
+- send a notification after summary generated
+- answer questions involving time
+- who has been mentioned
+
+All of this was doable, but it was clear doing each of these was often just adding another step or column to a database effectively. This was becoming very tedious. Not to mention I'd built many RAG applications already, and I wanted a more unified way of building them.
+
+Plus I wanted a brain (`burrito`) for myself and my personal data. I wanted to start asking questions and introspecting into myself, as well as being able to build a website from my raw unstructured data. The motivation being better able to express myself more fully to more people without spamming them with nonsense and things they don't care about. Eventually I would like to put all of my data into this.
+
 ## What was built
 
 ### Overview
 
 More or less the website [brain.burrito.place](https://brain.burrito.place) was built and deployed on my Mac Mini. I send it voice notes from my iPhone and they show up on the website. A bunch of fancy stuff as described in the goal happens behind the scenes to make it work.
 
-[small demo video]()
+[small demo video](https://www.youtube.com/watch?v=J0CiqBuVj-c&lc=UgxWfg-l6KTF0HfWcg14AaABAg)
 
 Some notes on the site:
 
@@ -74,7 +70,7 @@ Being able to separate these into independent steps and verify them one at a tim
 
 ### Are you a nerd? Wanna nerd out
 
-[Read this](/nerdin-wk1). The technical details of what I did this week. Mostly regarding the pipeline and framework for the `burrito`
+[Read this](/wk.1-build). The technical details of what I did this week. Mostly regarding the pipeline and framework for the `burrito`
 
 ## Reflections
 
@@ -123,9 +119,3 @@ The solution to this I am a bit unsure right now. It's structure will need to se
 I think one thing would be to simplify down to concatenated key names and types, but I don't think this will work very well for arrays. Further thinking on this topic needs to be done. Perhaps the pipeline as it works now is not suitable for ease of development. Worth considering alternatives.
 
 It would also be VERY cool to be able to add steps and manage the pipeline for a particular process via a webui.
-
-### Curious?
-
-If you're curious about any of this, drop me a line: [cj@cjpais.com](mailto:cj@cjpais.com)
-
-I'd love to chat with you!

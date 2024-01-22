@@ -1,22 +1,12 @@
+import { POSTS, Post } from "@/posts";
 import dayjs from "dayjs";
-import fs from "fs";
-import { join } from "path";
 
 export default function Home() {
-  const posts = [
-    {
-      title: "context v0",
-      date: 1705724515,
-      summary: "wrapping your personal data in a tortilla",
-    },
-  ];
-
   return (
-    <div className="flex flex-col max-w-2xl w-full gap-12 items-center">
+    <div className="flex flex-col max-w-2xl w-full gap-12 items-center pt-8">
       {/* <h3 className="">🔥 🌯</h3> */}
-      <div></div>
-      <div className="flex flex-col gap-3 max-w-[420px] w-full">
-        {posts.map((post, i) => (
+      <div className="flex flex-col gap-4 max-w-[420px] w-full">
+        {POSTS.map((post, i) => (
           <Row
             key={i}
             title={post.title}
@@ -38,15 +28,7 @@ export default function Home() {
   );
 }
 
-const Row = ({
-  title,
-  date,
-  summary,
-}: {
-  title: string;
-  date: number;
-  summary: string;
-}) => {
+const Row = ({ title, date, summary }: Post) => {
   return (
     <div className="flex flex-col font-mono gap-1 w-full">
       <div className="flex">

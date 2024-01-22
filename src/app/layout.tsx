@@ -14,10 +14,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className="flex flex-col w-full items-center py-16 px-8">
+        <main className="flex flex-col w-full items-center sm:py-16 py-8 px-8">
           <h4>
             <a href="/" className="no-underline">
-              updates
+              burrito updates
             </a>
           </h4>
           {children}
