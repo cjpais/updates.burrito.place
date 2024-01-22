@@ -18,6 +18,7 @@ export default function Home() {
       <div className="flex flex-col gap-2 items-center w-32">
         <div className="flex gap-4 font-mono text-[.65rem]">
           <a href="mailto:cj@cjpais.com">contact</a>
+          <a href="/todo">todo</a>
           <a href="https://github.com/cjpais/burrito" target="blank">
             github
           </a>
