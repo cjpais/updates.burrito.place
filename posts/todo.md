@@ -1,5 +1,7 @@
 # todo
 
+technical
+
 ```
 + ingestion pipelines for images, text, video, and non-files
     * "app" architecure instead of media "types"?
@@ -17,6 +19,7 @@
 + on page transformations, store this as training data
 + build data labeling engine
 + dashboard
+    + LOOK AT [FELTRON](http://feltron.com/), ty Shahruz
     + daily summary
     + questions
     + thinking
@@ -29,6 +32,12 @@
     * self service
 + custom vector database w/purpose built api?
 + ui for pipelines to output anything
+```
+
+non-technical
+
+```
+* BRAND AND IDENTITY
 ```
 
 misc
