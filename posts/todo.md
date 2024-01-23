@@ -40,6 +40,19 @@ non-technical
 * BRAND AND IDENTITY
 ```
 
+integrations
+
+```
+* photos
+* imessage (send and recieve)
+* google calendar (read and create)
+* spotify
+* gps
+* car
+* browsing/etc
+* gmail
+```
+
 misc
 
 ```
