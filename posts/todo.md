@@ -14,6 +14,8 @@
 + cache queries
 + support sending messages via imessage/twillio
     + how this fits into architecture?
++ on page transformations, store this as training data
++ build data labeling engine
 + dashboard
     + daily summary
     + questions
@@ -24,4 +26,7 @@
 + deployable
     x docker [fin 1/22/24]
     * s3 support
+    * self service
++ custom vector database w/purpose built api?
++ ui for pipelines to output anything
 ```
