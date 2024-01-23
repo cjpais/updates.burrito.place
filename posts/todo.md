@@ -30,3 +30,9 @@
 + custom vector database w/purpose built api?
 + ui for pipelines to output anything
 ```
+
+misc
+
+```
+* todo hierarchy? have it add todos automatically based on hierarchy?
+```
