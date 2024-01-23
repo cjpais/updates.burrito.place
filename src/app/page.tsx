@@ -19,6 +19,7 @@ export default function Home() {
         <div className="flex gap-4 font-mono text-[.65rem]">
           <a href="mailto:cj@cjpais.com">contact</a>
           <a href="/todo">todo</a>
+          <a href="/questions">questions</a>
           <a href="https://github.com/cjpais/burrito" target="blank">
             github
           </a>
