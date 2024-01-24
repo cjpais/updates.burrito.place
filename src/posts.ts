@@ -6,6 +6,11 @@ export type Post = {
 
 export const POSTS: Post[] = [
   {
+    title: "wk.1.5 unwrapped",
+    date: 1706060631,
+    summary: "why not share a burrito with friends",
+  },
+  {
     title: "wk.1 unwrapped",
     date: 1705883701,
     summary: "preppin' the burrito's data filling",
